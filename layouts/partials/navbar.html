@@ -1,0 +1,10 @@
+<nav>
+  {{ $currentPage := . }}
+  {{ $title := .Params.navActiveTitle }}
+  {{ range .Site.Menus.main }}
+    <a
+      class="{{ if eq $title .Name }}active text-main{{ end }}"
+      href="{{ .URL }}"
+      title="{{ .Title }}">{{ .Name }}</a>
+  {{ end }}
+</nav>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+	{{ partial "head.html" . }}
+
+	<body>
+
+		{{ partial "schema.html" . }}
+
+		{{ partial "header.html" . }}
+
+		<div>
+			{{ block "main" . }}{{ end }}
+		</div>
+		
+		{{ partial "footer.html" . }}
+
+		{{ partial "footer_js.html" . }}
+
+	</body>
+
+</html>

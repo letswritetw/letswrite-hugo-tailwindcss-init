@@ -1,0 +1,22 @@
+{{define "main"}}
+
+列表版型檔：layouts/_default/list.html
+
+<h1>{{ .Title }}</h1>
+
+<ul>
+	{{ $paginator := .Paginate (where .Pages "Type" "posts") 5 }}
+	{{ range $paginator.Pages }}
+		<li>
+			{{ .Date.Format "2006-01-02" }}
+			<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+			<p>{{ .Summary }}</p>
+		</li>
+	{{ end }}
+</ul>
+
+{{ template "_internal/pagination.html" . }}
+
+{{ .Content }}
+
+{{ end }}

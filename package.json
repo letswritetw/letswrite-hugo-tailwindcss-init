@@ -1,0 +1,15 @@
+{
+  "name": "letswrite-hugo-init-tailwindcss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/letswritetw/letswrite-hugo-init-tailwindcss.git",
+  "author": "Let's Write <letswritetw@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "tailwindcss": "^3.0.24"
+  },
+  "scripts": {
+    "dev": "npx tailwindcss -i ./static/css/tailwind.css -o ./static/css/tailwind.min.css --watch",
+    "product": "NODE_ENV=production npx tailwindcss -i ./static/css/tailwind.css -o ./static/css/tailwind.min.css --minify"
+  }
+}

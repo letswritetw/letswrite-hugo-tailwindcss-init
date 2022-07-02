@@ -1,0 +1,71 @@
+{{ define "main" }}
+
+	單文頁版型檔：layouts/_defatul/single.html
+
+	<hr>
+
+	{{/*  title  */}}
+	<h1>{{ .Title }}</h1>
+
+	<hr>
+
+	{{/*  date  */}}
+	{{ .Date.Format "2006-01-02 15:04" }}
+
+	<hr>
+
+	{{/*  TOC  */}}
+	<p>TOC</p>
+	{{ .TableOfContents }}
+
+	<hr>
+
+	{{/*  content  */}}
+	{{ .Content }}
+
+	<hr>
+
+	{{/*  categories  */}}
+	<p>Categories</p>
+	<ul>
+		{{ range .Params.categories }}
+			<li>
+				<a href="/categories/{{ . }}">{{ . }}</a>
+			</li>
+		{{ end }}
+	</ul>
+
+	<hr>
+
+	{{/*  tags  */}}
+	<p>Tags</p>
+	<ul>
+		{{ range (.GetTerms "tags") }}
+			<li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+		{{ end }}
+	</ul>
+
+	<hr>
+
+	{{/*  Prev / Next  */}}
+	{{ with .PrevInSection }}
+		上一篇 <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+	{{ end }}
+	{{ with .NextInSection }}
+		下一篇 <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+	{{ end }}
+
+	<hr>
+
+	{{/*  相關文章  */}}
+	{{ $related := .Site.RegularPages.Related . | first 5 }}
+	{{ with $related }}
+		<p>相關文章</p>
+		<ul>
+			{{ range . }}
+				<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+			{{ end }}
+		</ul>
+	{{ end }}
+
+{{ end }}
