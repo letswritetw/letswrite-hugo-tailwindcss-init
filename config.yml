@@ -1,4 +1,5 @@
 baseURL: /
+publishDir: docs
 timeZone: Asia/Taipei
 
 # sitemap

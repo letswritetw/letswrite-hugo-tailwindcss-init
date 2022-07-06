@@ -1,11 +1,10 @@
 ---
-title: Demo2
-description: Demo2 的 meta description
-images:
-  - image/demo_cover.png
-date: 2022-06-02T11:00:00+08:00
+title: Demo1
+description: Demo1 的 meta description
+cover: cover.png
+date: 2022-06-01T11:00:00+08:00
 categories: ['cat1']
-tags: ['tag1', 'tag2']
+tags: ['tag1']
 draft: true
 ---
 

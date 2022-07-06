@@ -23,7 +23,8 @@
 
 {{/*  CSS  */}}
 {{ $version := now.Unix }}
-<link rel="stylesheet" href="/css/tailwind.min.css?v={{ $version }}">
+{{ $tailwind := resources.Get "css/tailwind.min.css" | fingerprint }}
+<link rel="stylesheet" href="{{ $tailwind.Permalink }}">
 
 {{/*  Open Graph  */}}
 {{ template "_internal/opengraph.html" . }}

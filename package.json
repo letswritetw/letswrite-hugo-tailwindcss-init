@@ -9,7 +9,11 @@
     "tailwindcss": "^3.0.24"
   },
   "scripts": {
-    "dev": "npx tailwindcss -i ./static/css/tailwind.css -o ./static/css/tailwind.min.css --watch",
-    "product": "NODE_ENV=production npx tailwindcss -i ./static/css/tailwind.css -o ./static/css/tailwind.min.css --minify"
+    "hugo_dev": "hugo server -D",
+    "hugo_build": "hugo",
+    "tailwind_dev": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/tailwind.min.css --watch",
+    "tailwind_build": "NODE_ENV=production npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/tailwind.min.css --minify",
+    "serve": "yarn hugo_dev & yarn tailwind_dev",
+    "build": "yarn tailwind_build && yarn hugo_build"
   }
 }

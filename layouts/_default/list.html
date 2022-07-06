@@ -8,15 +8,27 @@
 	{{ $paginator := .Paginate (where .Pages "Type" "posts") 5 }}
 	{{ range $paginator.Pages }}
 		<li>
+
+			{{/*  配圖  */}}
+			{{ with .Resources.GetMatch (print .Params.cover) }}
+				<img
+					src="{{ .RelPermalink }}" alt="{{ .Title }}"
+					width="{{ .Width }}" height="{{ .Height }}">
+			{{ end }}
+
+			{{/*  日期  */}}
 			{{ .Date.Format "2006-01-02" }}
+
+			{{/*  文章標題  */}}
 			<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+
+			{{/*  文章簡述  */}}
 			<p>{{ .Summary }}</p>
+
 		</li>
 	{{ end }}
 </ul>
 
 {{ template "_internal/pagination.html" . }}
-
-{{ .Content }}
 
 {{ end }}
