@@ -22,7 +22,6 @@
 <link rel="icon" type="image/png" href="{{ .Site.Params.favicon }}">
 
 {{/*  CSS  */}}
-{{ $version := now.Unix }}
 {{ $tailwind := resources.Get "css/tailwind.min.css" | fingerprint }}
 <link rel="stylesheet" href="{{ $tailwind.Permalink }}">
 

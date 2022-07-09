@@ -29,8 +29,6 @@ menu:
 params:
   title: Let's Write
   description: Let's Write 製作的 Hugo init 檔案
-  images:
-    - image/kv_image.png
 
 # copyright
 copyright: Let's Write. All Rights Reserved.

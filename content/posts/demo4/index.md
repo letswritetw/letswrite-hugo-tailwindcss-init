@@ -2,9 +2,9 @@
 title: Demo4
 description: Demo4 的 meta description
 cover: cover.png
-date: 2022-06-04T11:00:00+08:00
-categories: ['cat2']
-tags: ['tag1']
+date: 2022-07-04T11:00:00+08:00
+categories: [cat2]
+tags: [tag1]
 draft: true
 ---
 

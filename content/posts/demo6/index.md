@@ -2,9 +2,9 @@
 title: Demo6
 description: Demo6 的 meta description
 cover: cover.png
-date: 2022-06-06T11:00:00+08:00
-categories: ['cat3']
-tags: ['tag1', 'tag2', 'tag3']
+date: 2022-07-06T11:00:00+08:00
+categories: [cat3]
+tags: [tag1, tag2, tag3]
 draft: true
 ---
 

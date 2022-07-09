@@ -2,9 +2,9 @@
 title: Demo1
 description: Demo1 的 meta description
 cover: cover.png
-date: 2022-06-01T11:00:00+08:00
-categories: ['cat1']
-tags: ['tag1']
+date: 2022-07-01T11:00:00+08:00
+categories: [cat1]
+tags: [tag1]
 draft: true
 ---
 

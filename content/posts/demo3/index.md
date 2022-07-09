@@ -2,9 +2,9 @@
 title: Demo3
 description: Demo3 的 meta description
 cover: cover.png
-date: 2022-06-03T11:00:00+08:00
-categories: ['cat2']
-tags: ['tag1', 'tag2', 'tag3']
+date: 2022-07-03T11:00:00+08:00
+categories: [cat2]
+tags: [tag1, tag2, tag3]
 draft: true
 ---
 
