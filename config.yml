@@ -9,7 +9,7 @@ sitemap:
   priority: 1.0
 
 # 要用 GA，請解開以下註解，並填寫 GA Id
-# googleAnalytics:
+googleAnalytics: UA-PROPERTY_ID
 
 title: 網站名稱
 
@@ -25,11 +25,6 @@ menu:
     url: /posts/
     weight: 2
 
-# Open Graph，請改成自己的網站
-params:
-  title: Let's Write
-  description: Let's Write 製作的 Hugo init 檔案
-
 # copyright
 copyright: Let's Write. All Rights Reserved.
 
@@ -38,6 +33,6 @@ summaryLength: 15
 
 # 客製參數
 params:
-  mainColor: "#42A6F7"
+  mainColor: '#42A6F7'
   favicon: 這邊填寫 favicon 的圖檔路徑
 

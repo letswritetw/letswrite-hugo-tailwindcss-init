@@ -1,8 +1,8 @@
 {
-  "name": "letswrite-hugo-init-tailwindcss",
+  "name": "letswrite-hugo-tailwindcss-init",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/letswritetw/letswrite-hugo-init-tailwindcss.git",
+  "repository": "https://github.com/letswritetw/letswrite-hugo-tailwindcss-init.git",
   "author": "Let's Write <letswritetw@gmail.com>",
   "license": "MIT",
   "dependencies": {

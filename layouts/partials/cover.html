@@ -1,0 +1,5 @@
+{{ with .Resources.GetMatch (print .Params.cover) }}
+  <img
+    src="{{ .RelPermalink }}" alt="{{ .Title }}"
+    width="{{ .Width }}" height="{{ .Height }}">
+{{ end }}

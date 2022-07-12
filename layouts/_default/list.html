@@ -10,11 +10,7 @@
 		<li>
 
 			{{/*  配圖  */}}
-			{{ with .Resources.GetMatch (print .Params.cover) }}
-				<img
-					src="{{ .RelPermalink }}" alt="{{ .Title }}"
-					width="{{ .Width }}" height="{{ .Height }}">
-			{{ end }}
+			{{ partial "cover.html" . }}
 
 			{{/*  日期  */}}
 			{{ .Date.Format "2006-01-02" }}

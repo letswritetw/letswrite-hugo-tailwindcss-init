@@ -2,9 +2,9 @@
 <script type="application/ld+json">
   {
     "@context": "https://www.schema.org",
-    "@type": "WebSite",
+    "@type": "Organization",
     "name": "{{ .Site.Title }}",
-    "alternateName": "{{ .Site.Title }}",
-    "url": "{{ .Site.BaseURL }}"
+    "url": "{{ .Site.BaseURL }}",
+    "logo": "{{ .Site.Params.favicon }}"
   }
 </script>
