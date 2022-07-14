@@ -5,7 +5,7 @@
 <h1>{{ .Title }}</h1>
 
 <ul>
-	{{ $paginator := .Paginate (where .Pages "Type" "posts") 5 }}
+	{{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") 5 }}
 	{{ range $paginator.Pages }}
 		<li>
 
